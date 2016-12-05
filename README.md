@@ -10,6 +10,7 @@
         2.2 在你需要执行的电脑上使用root/su权限执行 curl -s $path | bash
 
 这是一个测试
+
     funtion name(){
         print "ssss","dddd"
     }
