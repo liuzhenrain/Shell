@@ -8,9 +8,3 @@
     2.直接运行
         2.1 找到需要的脚本，然后选择"Raw"获取具体的地址。
         2.2 在你需要执行的电脑上使用root/su权限执行 curl -s $path | bash
-
-这是一个测试
-
-    funtion name(){
-        print "ssss","dddd"
-    }
