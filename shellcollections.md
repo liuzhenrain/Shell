@@ -31,7 +31,7 @@
 
     scp -P 22(如果是默认22端口则不需要) -i keyfile /path/local_filename username@server_ip:/server_dir_path
 
-## 从服务器下载文件，将上传的命令反过来就行。上传整个目录，在scp之后加上 -r 参数
+## 从服务器下载文件，将上传的命令反过来就行。上传整个目录，在scp之后加上 `-r` 参数
 
 ## linux/unix/Mac 登录服务器,windows 需要使用 git bash 才能用这个命令
 
