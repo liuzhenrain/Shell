@@ -25,6 +25,7 @@ yum install -y libtool-ltdl-devel sqlite-devel tk-devel tcl-devel xz-libs
 sleep 5
 
 echo "下载并安装Python"
+echo $python_url
 wget --no-check-certificate $python_url
 tar -zxf Python-${version}.tgz
 cd Python-${version}
