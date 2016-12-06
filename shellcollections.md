@@ -23,26 +23,22 @@
 
 ## 上传本地文件到服务端
 
-### linux/unix/Mac
+> linux/unix/Mac , windows windows 请使用git bash客户端
+>> #如果使用默认的22端口，则不需要 `-P 22` ; 如果使用密码登录，则不需要 `-i keyfile`
+>> 从服务器下载文件，将上传的命令反过来就行。针对整个目录，在scp之后加上 `-r` 参数
 
-    scp -P 22(如果是默认的不需要这个) -i keyfile /path/local_filename username@server_ip:/server_dir_path
-
-## windows 请使用git bash客户端
-
-    scp -P 22(如果是默认22端口则不需要) -i keyfile /path/local_filename username@server_ip:/server_dir_path
-
-## 从服务器下载文件，将上传的命令反过来就行。上传整个目录，在scp之后加上 `-r` 参数
+    scp -P 22 -i keyfile /path/local_filename username@server_ip:/server_dir_path
 
 ## linux/unix/Mac 登录服务器,windows 需要使用 git bash 才能用这个命令
 
-    ssh -p 22 username@server_ip -i /private_key_path
+    ssh -p 22 username@server_ip -i /private_key_path #如果使用密码登录，则不需要 `-i /private_key_path` 命令
 
 ## 以下为 shell 接收用户输入
 
     read -p "Enter your name:" name
     echo "Hello $name, welcome to my program"
 
-## 配置 ssh config 文件，帮助减少 ssh 登录是的操作。
+## 配置 ssh config 文件，帮助减少 ssh 登录时的操作。
 
 >windows 使用 gitbash 客户端即可与 linux/unix/Mac 操作一致。
 >>**请注意 不要修改 windows 下 gitbash 客户端的默认设置，他的默认目录应该是 ~ 对应 c/User/Administrator 目录**
