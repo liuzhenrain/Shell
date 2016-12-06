@@ -14,9 +14,13 @@ sudo vi /etc/shadowsocks.json
 # 上传本地文件到服务端
 # linux/unix/Mac
 scp -P 22(如果是默认的不需要这个) /path/local_filename username@server_ip:/server_dir_path
-# windows 请使用git bush客户端
+# windows 请使用git bash客户端
 sc -P 22(如果是默认22端口则不需要) /path/local_filename username@server_ip:/server_dir_path
 # 从服务器下载文件，将上传的命令反过来就行。
 
-# linux/unix/Mac 登录服务器
+# linux/unix/Mac 登录服务器,windows需要使用git bash才能用这个命令
 ssh -p 22 username@server_ip -i /private_key_path
+
+# 以下为shell接收用户输入
+read -p "Enter your name:" name
+echo "Hello $name, welcome to my program"
