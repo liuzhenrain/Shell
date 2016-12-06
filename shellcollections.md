@@ -24,7 +24,7 @@
 ## 上传本地文件到服务端
 
 > linux/unix/Mac , windows windows 请使用git bash客户端
->> #如果使用默认的22端口，则不需要 `-P 22` ; 如果使用密码登录，则不需要 `-i keyfile`
+>> 如果使用默认的22端口，则不需要 `-P 22` ; 如果使用密码登录，则不需要 `-i keyfile`
 >> 从服务器下载文件，将上传的命令反过来就行。针对整个目录，在scp之后加上 `-r` 参数
 
     scp -P 22 -i keyfile /path/local_filename username@server_ip:/server_dir_path
