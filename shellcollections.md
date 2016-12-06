@@ -25,7 +25,7 @@
 
 > linux/unix/Mac , windows windows 请使用git bash客户端
 >> 如果使用默认的22端口，则不需要 `-P 22` ; 如果使用密码登录，则不需要 `-i keyfile`
->> 从服务器下载文件，将上传的命令反过来就行。针对整个目录，在scp之后加上 `-r` 参数
+从服务器下载文件，将上传的命令反过来就行。针对整个目录，在scp之后加上 `-r` 参数
 
     scp -P 22 -i keyfile /path/local_filename username@server_ip:/server_dir_path
 
@@ -48,5 +48,15 @@
     Host name
     Hostname server_ip
     User username
-    Port 22 ~如果有其他的填入其他的端口
-    Idetityfile /g/AWS/banwagong ~密钥文件，如果有就填入
+    Port 22 *如果有其他的填入其他的端口*
+    Idetityfile /g/AWS/banwagong *密钥文件，如果有就填入*
+
+---
+>插入一个关于vscode的配置
+
+    // 将设置放入此文件中以覆盖默认值和用户设置。
+    {
+        // 第一个是英文字体,第二个是中文字体,使用雅黑会默认变成宋体,丑到死
+        "editor.fontFamily":"Consolas,Dengxian",
+        "editor.formatOnType": true
+    }
