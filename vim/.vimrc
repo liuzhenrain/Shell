@@ -34,3 +34,7 @@ set ruler
 set cursorline
 " 高亮搜索结果
 set hlsearch
+" 中文设置
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312
+set encoding=utf-8
+set termencoding=utf-8
