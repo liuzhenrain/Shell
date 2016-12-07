@@ -62,4 +62,7 @@ echo "==    #!/usr/bin/python266 =="
 echo "============================="
 sleep 10
 vim /usr/bin/yum
+echo "8.安装Python Setuptools工具包以及pip"
+wget --no-check-certificate https://bootstrap.pypa.io/ez_setup.py -O - | python
+easy_install pip
 exit
