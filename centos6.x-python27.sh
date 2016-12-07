@@ -18,7 +18,6 @@ if [ $? -eq 0 ]; then
 fi
 
 # 安装需要的工具或库文件
-'''
 echo "3.安装需要的工具或库文件"
 yum groupinstall -y "Development tools"
 yum install -y openssl-devel zlib-devel ncurses-devel bzip2-devel readline-devel
@@ -35,7 +34,7 @@ cd Python-${version}
 make
 make altinstall
 sleep 5
-'''
+
 echo "5.检查安装的Python版本号是否是指定的版本"
 python2.7 -V 2>&1 | grep "$version"
 if [ $? -ne 0 ]; then
@@ -45,9 +44,22 @@ if [ $? -ne 0 ]; then
         echo "Installation failed. use '/usr/local/bin/python -V' to have a check"
     fi
     exit 1
+else
+    echo "已经正确安装版本$(python2.7 -V),位置:$(which python2.7)"
 fi
-sleep 5
+sleep 5:q
 
 echo "6.设定软连接，将系统默认的python连接到刚刚创建的版本上"
+mv /usr/bin/python /usr/bin/python266
 ln -s /usr/local/bin/python2.7 /usr/bin/python
 
+echo "7.当前Python版本号为:$(python -V 2>&1)"
+echo "请继续设定yum的Python指定版本"
+echo "============================="
+echo "==    #!/usr/bin/python    =="
+echo "==    修改为:               =="
+echo "==    #!/usr/bin/python266 =="
+echo "============================="
+sleep 10
+vim /usr/bin/yum
+exit
