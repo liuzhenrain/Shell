@@ -9,4 +9,8 @@
         2.1 找到需要的脚本，然后选择"Raw"获取具体的地址。
         2.2 在你需要执行的电脑上使用root/su权限执行 curl -s $path | bash
 
+## 在centos上自动配置vimrc
+
+    curl -s https://raw.githubusercontent.com/liuzhenrain/Shell/master/vim/centos_vim_auto.sh | bash
+
 [shellcollections.md](./shellcollections.md)文件是是一个 `shell` 脚本集合
