@@ -13,4 +13,8 @@
 
     curl -s https://raw.githubusercontent.com/liuzhenrain/Shell/master/vim/centos_vim_auto.sh | bash
 
+## 在centos上自动升级Python到2.7.12.最后需要手动修改yum配置
+
+    curl -s https://raw.githubusercontent.com/liuzhenrain/Shell/master/centos6.x-python27.sh | bash
+
 [shellcollections.md](./shellcollections.md)文件是是一个 `shell` 脚本集合
