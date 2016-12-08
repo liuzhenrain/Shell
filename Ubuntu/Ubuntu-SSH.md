@@ -37,3 +37,4 @@
     Port 29111 #默认搬瓦工应该是非22端口
     User root   #除非你修改了,默认应该是 root 账户
     Identityfile ~/.ssh/id_rsa_path 
+    # 之后使用 ssh banwagong 就可以直接登录了

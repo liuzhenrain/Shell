@@ -13,6 +13,11 @@
 
     curl -s https://raw.githubusercontent.com/liuzhenrain/Shell/master/vim/centos_vim_auto.sh | bash
 
+## 在 Ubuntu 上自动配置 vimrc
+
+    apt-get -y install curl
+    curl https://raw.githubusercontent.com/liuzhenrain/Shell/master/vim/.vimrc > ~/.vimrc
+
 ## 在centos上自动升级Python到2.7.12.最后需要手动修改yum配置
 
     curl -s https://raw.githubusercontent.com/liuzhenrain/Shell/master/centos6.x-python27.sh | bash
