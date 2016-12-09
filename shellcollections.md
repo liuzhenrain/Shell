@@ -51,6 +51,11 @@
     Port 22 *如果有其他的填入其他的端口*
     Idetityfile /g/AWS/banwagong *密钥文件，如果有就填入*
 
+## 修改SSH连接时常,防止经常出现丢失连接.
+
+    vim /etc/ssh/sshd_config
+    # 找到 ClientAliveCountMax 将其值修改为你想要的时间,单位为分钟.如果找不到就自己写. 
+
 ## shell 特殊应用
 
 * 2>&1
@@ -68,6 +73,7 @@
     - `$#` 添加到Shell的参数个数
     - `$0` Shell本身的文件名
     - `$1-$n` 添加到Shell的各参数值.`$1`是第一参数,`$2`是第二参数...
+
 
 ---
 >插入一个关于vscode的配置
