@@ -74,7 +74,17 @@
     - `$0` Shell本身的文件名
     - `$1-$n` 添加到Shell的各参数值.`$1`是第一参数,`$2`是第二参数...
 
+## wget 相关
 
+* 下载网页以及网页中的所有内容，并保存到一个文件夹下
+
+    wget -x -p -k -H -E --no-check-certificate <网页地址>
+    -x : 组织文件夹
+    -p : get all images, etc. needed to display HTML page.
+    -k : make links in downloaded HTML point to local files.
+    -H : go to foreign hosts when recursive.
+    -E : save HTML documents with `.html' extension.
+    --no-check-certificate : don't validate the server's certificate.
 ---
 >插入一个关于vscode的配置
 
@@ -84,3 +94,5 @@
         "editor.fontFamily":"Consolas,Dengxian",
         "editor.formatOnType": true
     }
+
+
