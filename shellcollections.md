@@ -76,15 +76,26 @@
 
 ## wget 相关
 
-* 下载网页以及网页中的所有内容，并保存到一个文件夹下
+    * 下载网页以及网页中的所有内容，并保存到一个文件夹下
 
-    wget -x -p -k -H -E --no-check-certificate <网页地址>
-    -x : 组织文件夹
-    -p : get all images, etc. needed to display HTML page.
-    -k : make links in downloaded HTML point to local files.
-    -H : go to foreign hosts when recursive.
-    -E : save HTML documents with `.html' extension.
-    --no-check-certificate : don't validate the server's certificate.
+        wget -x -p -k -H -E --no-check-certificate <网页地址>
+        -x : 组织文件夹
+        -p : get all images, etc. needed to display HTML page.
+        -k : make links in downloaded HTML point to local files.
+        -H : go to foreign hosts when recursive.
+        -E : save HTML documents with `.html' extension.
+        --no-check-certificate : don't validate the server's certificate.
+
+## 查看ubuntu版本号等信息
+
+    lsb_release -a
+    得到反馈信息:
+        No LSB modules are available.
+        Distributor ID: Ubuntu
+        Description:    Ubuntu 16.10
+        Release:        16.10
+        Codename:       yakkety
+
 ---
 >插入一个关于vscode的配置
 
